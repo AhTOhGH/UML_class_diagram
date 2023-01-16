@@ -2,6 +2,7 @@
 #include "./ui_main_window.h"
 #include <QGraphicsScene>
 #include "class_item.h"
+#include "class_gi.h"
 
 CMainWindow::CMainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -22,7 +23,8 @@ CMainWindow::~CMainWindow()
 
 void CMainWindow::onAddClass()
 {
-    auto* pNewClass = new CClassItem();
+    auto* pNewClass = new CClassGI();
+    pNewClass->setTextInteractionFlags(pNewClass->textInteractionFlags().setFlag(Qt::TextEditable));
     pNewClass->setFlag(QGraphicsItem::GraphicsItemFlag::ItemIsMovable);
     pNewClass->setFlag(QGraphicsItem::GraphicsItemFlag::ItemIsSelectable);
     m_pScene->addItem(pNewClass);

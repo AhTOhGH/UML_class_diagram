@@ -29,7 +29,7 @@ void CClassItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option
     QRect rcFields = fieldsRect(fm);
     rcClassName.setWidth(std::max(rcClassName.width(), rcFields.width()));
     painter->drawRect(rcClassName);
-    painter->drawText(rcClassName, m_className);
+    painter->drawText(rcClassName.bottomLeft(), m_className);
 
     if(!m_fields.empty())
     {

@@ -19,6 +19,8 @@ set(PROJECT_SOURCES
         main_window.ui
         class_item.h
         class_item.cpp
+        class_gi.h
+        class_gi.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
