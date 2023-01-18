@@ -21,6 +21,8 @@ set(PROJECT_SOURCES
         class_item.cpp
         class_gi.h
         class_gi.cpp
+        class_gi3.h
+        class_gi3.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

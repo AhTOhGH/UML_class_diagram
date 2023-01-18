@@ -19,6 +19,7 @@ public:
 
 private:
     void onAddClass();
+    void onTest();
 
 private:
     Ui::CMainWindow *ui;

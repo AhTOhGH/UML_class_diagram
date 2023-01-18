@@ -42,6 +42,7 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actAddClass"/>
+   <addaction name="actTest"/>
   </widget>
   <action name="actAddClass">
    <property name="text">
@@ -49,6 +50,14 @@
    </property>
    <property name="toolTip">
     <string>Добавить класс</string>
+   </property>
+  </action>
+  <action name="actTest">
+   <property name="text">
+    <string>Тест</string>
+   </property>
+   <property name="toolTip">
+    <string>Тест</string>
    </property>
   </action>
  </widget>
